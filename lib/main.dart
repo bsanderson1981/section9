@@ -16,7 +16,7 @@ class XylophoneApp extends StatelessWidget {
   void playSound() async {
     final player = AudioPlayer(); // ✅ Created only when needed
     print('Playing sound...');
-    await player.play(AssetSource('note2.wav'));
+    await player.play(AssetSource('note4.wav'));
   }
 
   @override
