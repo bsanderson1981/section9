@@ -23,13 +23,13 @@ class XylophoneApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Column(
-          children: List.generate(7, (index) {
+          children: List.generate(7, (index) { // make index for onpress and wav files callback
             return Expanded(
                 child: Container(
-                width: double.infinity, // Full width
+                width: double.infinity, // Full width row
               child: TextButton(
                 style: TextButton.styleFrom(
-                  backgroundColor: Colors.primaries[index % Colors.primaries.length],
+                  backgroundColor: Colors.primaries[index % Colors.primaries.length],  //  colors for button
                   foregroundColor: Colors.white,
                   shape: const RoundedRectangleBorder(
                     borderRadius: BorderRadius.zero, // No rounding
